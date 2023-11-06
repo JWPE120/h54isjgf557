@@ -1,0 +1,65 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accountingonne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; /* Warna latar belakang awal */
+            color: #fff;
+            transition: background-color 2s; /* Transisi perubahan warna latar belakang */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 50px;
+            color: #00f; /* Warna judul */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        button {
+            background-color: #00f; /* Warna tombol */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0f0; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>accountingonne</h1>
+    <img src="https://drive.google.com/uc?export=view&id=1Ac7d_GDGEMwWJI5aFNNGJuXGaO_xopWB" width="150"height="150"alt="Gambar Anda">
+    <p>Selamat datang di website resmi accounting one. Silahkan tekan tombol "kunjungi" untuk informasi lebih lanjut! </p>
+    <button onclick="location.href='https://jwpentertainments.eu.org/web/proyek/akl1/home'">Kunjungi</button>
+
+    <script>
+        // JavaScript untuk mengubah warna latar belakang secara otomatis
+        const colors = ['#ff0000', '#00ff00', '#0000ff']; // Warna yang akan digunakan
+        let currentColorIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }
+
+        setInterval(changeBackgroundColor, 2000); // Ganti warna setiap 2 detik
+    </script>
+</body>
+</html>
