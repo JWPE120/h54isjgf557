@@ -1,0 +1,104 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akael onne Credit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #030725;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #0f0a0a;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .icon {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #191212;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .navbar a:not(.icon) {
+                display: none;
+            }
+            .navbar .icon {
+                float: right;
+                display: block;
+            }
+            .navbar.responsive {
+                position: relative;
+            }
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="#" class="icon" onclick="toggleNavbar()">&#9776;</a>
+        <a href="https://jwpentertainments.eu.org/web/proyek/akl1/home">Home/halaman utama</a>
+        <a href="https://jwpentertainments.eu.org/web/proyek/akl1/About">About/informasi lebih lanjut</a>
+        <a href="https://jwpentertainments.eu.org/web/proyek/akl1/sosmed">Sosmed</a>
+        <a href="https://jwpentertainments.eu.org/web/proyek/akl1/Credit">Credit</a>
+    </div>
+    <div class="container">
+        <h1>Credit Page</h1>
+        <p>Halaman ini dibuat oleh perusahaan JWP Entertainment. Jika anda ingin memberikan saran atau kritik dapat dikirimkan melalui email kami. </p>
+        <p>Email : jurassicworldparkentertaiment@gmail.com </p>
+        <p>Kami juga ingin memberikan ucapan terima kasih kepada.</p>
+        <p>1. Siswa AKL_25</p>
+        <img src="https://drive.google.com/uc?export=view&id=11wU8zaAcYOuh7tExsovg77yC2jRAYeuH"width="300"height="250"></img>
+        <p>2. Nanda Arya Putra sebagai pemilik perusahaan JWP Entertainment</p>
+        <img src="https://drive.google.com/uc?export=view&id=1tVvG3GZHY7i-f3UWtopSqdYyUFydwrRx"width="200"height="250"></img>
+        <p>3. Github</p>
+        <img src="https://drive.google.com/uc?export=view&id=11z8lb8_w6MxkSaFORPGOtFcIhxgO1ZFE"width="250"height="250"></img>
+        <p>4. Chatgpt (IA from OpenAI)</p>
+        <img src="https://drive.google.com/uc?export=view&id=121g-_I1kb4uIMoXc3pmp6t8lt64k-1HJ"width="300"height="200"></img>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 AKL_25 X JWP Entertainment. All rights reserved.</p>
+    </div>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("myNavbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
