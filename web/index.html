@@ -1,0 +1,89 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWP Entertainment</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background-color 0.5s;
+        }
+        
+        h1 {
+            font-size: 48px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #00f;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <h1>JWP Entertainment</h1>
+    <img src="https://drive.google.com/uc?export=view&id=14K0NFVPPaBgmHDRJmqn8UNblNO0olNeB" alt="JWP Entertainment Logo">
+    <p>Selamat Datang di JWP Entertainment. JWP Entertainment adalah sebuah nama perusahaan yang berbasis hiburan online. JWP Entertainment dikelola oleh seseorang yang bernama Nanda. Silahkan pilih beberapa tombol di bagian bawah ini untuk mengunjungi beberapa informasi tentang perusahaan ini. </p>
+    
+    <div class="button-container">
+        <a href="https://jwpentertainments.eu.org/web/artstudio" target="_blank"><button>Produk & LayananJWP Entertainment</button></a>
+        <a href="https://jwpentertainment.blogspot.com" target="_blank"><button>Blog JWP Entertainment</button></a>
+        <a href="https://jwpentertainments.eu.org/web/proyek" target="_blank"><button>Proyek JWP Entertainment</button></a>
+        <a href="https://jwpentertainments.eu.org/web/sosmed" target="_blank"><button>sosial media</button></a>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ff00ff', '#ffff00'];
+
+        function changeColors() {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+            buttons.forEach(button => {
+                button.style.backgroundColor = randomColor;
+            });
+        }
+
+        buttons.forEach(button => {
+            button.addEventListener('click', changeColors);
+        });
+    </script>
+</body>
+</html>
