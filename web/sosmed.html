@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Media Sosial</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .social-link {
+            text-decoration: none;
+            font-size: 24px;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+        }
+        .social-link:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+            transform: scale(1.1);
+        }
+        .glowing-border {
+            animation: glowing 4s infinite;
+            border: 2px solid #33FF57;
+            border-radius: 5px;
+        }
+        @keyframes glowing {
+            0% {
+                border-color: #33FF57;
+                box-shadow: 0 0 5px rgba(51, 255, 87, 0.5);
+            }
+            50% {
+                border-color: #5733FF;
+                box-shadow: 0 0 20px rgba(87, 51, 255, 0.8);
+            }
+            100% {
+                border-color: #33FF57;
+                box-shadow: 0 0 5px rgba(51, 255, 87, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <a class="social-link glowing-border" href="https://m.youtube.com/channel/UCozTo7yh5Iw-RWpJTidDbYw/videos">YouTube</a>
+        <a class="social-link glowing-border" href="https://twitter.com/WorldJuras50502">Twitter/Xwitter</a>
+        <a class="social-link glowing-border" href="https://instagram.com/27.jwpentertaimen?igshid=ZGUzMzM3NWJiOQ==">Instagram</a>
+    </div>
+</body>
+</html>
