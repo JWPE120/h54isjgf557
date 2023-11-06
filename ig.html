@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to instagram</title>
+    <style>
+      body{
+        Background-color: #000000;
+      }
+      
+      h1, h2 {
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      p {
+        color:#ffffff;
+      } 
+    </style>
+  </head>
+  <body>
+    <h1>Official Instagram JWP Entertainment</h1>
+    <img src="https://drive.google.com/uc?export=view&id=1jl_S-7_41kjhybRKkOBkkRdrBBGU6uxV"width="300">
+    <h2>Welcome</h2>
+    <p>In a world of entertainment full of magic, welcome to the official JWP Entertainment account! 🌟 We are pioneers in the entertainment industry committed to providing unforgettable experiences to all entertainment lovers. With every step we take, we bring the world of entertainment closer to you.</p>
+
+<p>Here, you will find a variety of exciting content, from exclusive footage of featured shows to exciting surprises ready to pamper our loyal fans. We believe that entertainment is the passion that connects us all, and we want to share that joy with you.</p>
+
+<p>We are also proud to have a talented team that always strives to provide the best quality. We support various types of arts and entertainment, from music performances, performing arts, films, to creative events. This is the place for true art fans!</p>
+
+<p>We are committed to being part of your entertainment journey and providing content that entertains and inspires. We thank you for your support and invite you to come along on our journey. Don't miss precious moments with us!
+</p>
+
+<p>Connect with us, follow the latest developments, and feel free to share your opinions and hopes. Together, let's create beautiful memories in the world of entertainment. Enjoy unforgettable moments with JWP Entertainment! 🎉✨ #JWPEntertainment #BestEntertainment #ArtForAll</p>
+
+<a href="https://jwpentertainments.eu.org" id="salinTautan">Link website</a>
+<button onclick="salinTautan();">Salin URL</button>
+
+  </body>
+<script>
+function salinTautan() {
+  // Mengambil elemen tautan "Link" berdasarkan ID
+  var tautan = document.getElementById("salinTautan");
+
+  // Membuat elemen input baru untuk menyimpan tautan
+  var inputTautan = document.createElement("input");
+
+  // Menetapkan nilai input menjadi URL tautan
+  inputTautan.value = tautan.href;
+
+  // Menambahkan elemen input ke dokumen
+  document.body.appendChild(inputTautan);
+
+  // Memilih nilai dalam input
+  inputTautan.select();
+
+  // Menyalin nilai yang dipilih ke clipboard
+  document.execCommand("copy");
+
+  // Menghapus elemen input yang tidak diperlukan
+  document.body.removeChild(inputTautan);
+
+  // Pesan yang muncul ketika tautan disalin
+  alert("Tautan telah disalin: " + tautan.href);
+}
+</script>
+</html>
