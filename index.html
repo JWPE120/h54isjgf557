@@ -9,11 +9,24 @@
             font-family: Arial, sans-serif;
         }
 
+        header {
+            background-color: #0077ff;
+            color: #fff;
+            padding: 20px 0;
+        }
+
         h1 {
             color: #333;
             font-size: 36px;
+        }
+
+        img {
+            width: 300px;
+            height: 250px;
+        }
+
+        .container {
             margin-top: 50px;
-            animation: fadeIn 1s ease-in;
         }
 
         p {
@@ -21,7 +34,11 @@
             font-size: 18px;
         }
 
-        button {
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
             background-color: #0077ff;
             color: #fff;
             border: none;
@@ -32,25 +49,22 @@
             transition: background-color 0.3s ease;
         }
 
-        button:hover {
+        .button:hover {
             background-color: #0055cc;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     </style>
 </head>
 <body>
-    <h1>Selamat Datang</h1>
-    <img src="https://drive.google.com/uc?export=view&id=13GK_a8jOaH066FRQAiICme8hwgoiFjuV"width="300"height="250">
-    <p>Silahkan pilih salah satu tindakan:</p>
-    <button onclick="location.href='https://www.link-pertama.com'">Lihat website resmi</button>
-    <button onclick="location.href='https://www.link-kedua.com'">Download Aplikasi</button>
+    <header>
+        <h1>Selamat Datang</h1>
+    </header>
+    <div class="container">
+        <img src="https://drive.google.com/uc?export=view&id=13GK_a8jOaH066FRQAiICme8hwgoiFjuV" alt="Image" width="300" height="250">
+        <p>Silahkan pilih salah satu tindakan:</p>
+        <div class="button-container">
+            <button class="button" onclick="location.href='https://www.link-pertama.com'">Lihat website resmi</button>
+            <button class="button" onclick="location.href='https://www.link-kedua.com'">Download Aplikasi</button>
+        </div>
+    </div>
 </body>
 </html>
