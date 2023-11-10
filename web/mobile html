@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Perangkat Pengguna Tidak Diizinkan</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        img.blinking {
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perangkat Pengguna Tidak Diizinkan</h1>
+    <img src="https://drive.google.com/uc?export=view&id=1BgLjFelAI4Xq68DhGz1W5P8-dd2MV7Sr" width="300" height="300" class="blinking">
+    <h2>Perangkat Mobile Anda Terdeteksi</h2>
+    <p>Mohon maaf, Anda tidak diizinkan mengakses halaman ini dengan perangkat mobile. Silakan gunakan perangkat PC desktop untuk mengakses halaman ini atau unduh aplikasi mobile kami untuk mengakses halaman ini.</p>
+    <button><a href="URL_ANDA">Daftar Aplikasi</a></button>
+</body>
+</html>
