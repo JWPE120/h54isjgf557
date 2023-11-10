@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Loading</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image-container {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <h1>Memeriksa Perangkat</h1>
+        <div class="image-container">
+            <img id="changingImage" src="https://drive.google.com/uc?export=view&id=1BgLjFelAI4Xq68DhGz1W5P8-dd2MV7Sr" width="100" height="100">
+        </div>
+        <p>Harap tunggu beberapa saat. Proses ini tidak akan lama.</p>
+    </div>
+
+    <script>
+        var imageIndex = 1; // Indeks awal gambar
+
+        function changeImage() {
+            var image = document.getElementById("changingImage");
+            if (imageIndex === 1) {
+                image.src = "https://drive.google.com/uc?export=view&id=1BOeHJeystBRjWZFOof08EXmxjHbWK-J_"; // Ganti ke gambar kedua
+                imageIndex = 2;
+            } else {
+                image.src = "https://drive.google.com/uc?export=view&id=1BgLjFelAI4Xq68DhGz1W5P8-dd2MV7Sr";// Ganti ke gambar pertama
+                imageIndex = 1;
+            }
+        }
+
+        // Memanggil fungsi changeImage secara otomatis setiap 2 detik
+        setInterval(changeImage, 2000);
+        
+setTimeout(function () {
+            // Mendeteksi jenis perangkat
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            // Arahkan pengguna ke halaman yang sesuai
+            if (isMobile) {
+                window.location.href = "halaman_mobile.html";
+            } else {
+                window.location.href = "halaman_desktop.html";
+            }
+        }, 10000); // Waktu tunggu 10 detik sebelum mengalihkan
+    </script>
+</body>
+</html>
