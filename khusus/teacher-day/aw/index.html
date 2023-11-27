@@ -8,6 +8,7 @@
         body {
             font-family: 'Arial', sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -15,34 +16,72 @@
             background-color: #f4f4f4;
         }
 
+        h1 {
+            color: #3498db;
+        }
+
+        h2 {
+            color: #2980b9;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 0 10px;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin: 10px;
             cursor: pointer;
             background-color: #3498db;
             color: #fff;
             border: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #2980b9;
         }
+
+        .gift-container {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        .gift-box {
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-<h1>Selamat Hari Guru</h1>
-<h2>Untuk guru favorit ku<h2>
-<p>Silahkan buka hadiah ibu dibawah ini!</p>
-    <button onclick="redirectPage('https://jwpentertainments.eu.org/khusus/teacher-day/aw/index2')">Hadiah 1</button>
-    <button onclick="redirectPage('https://jwpentertainments.eu.org/khusus/teacher-day/aw/index3')">Hadiah 2</button>
+    <h1>Selamat Hari Guru</h1>
+    <h2>Untuk guru favorit ku</h2>
+    <p>Silahkan buka hadiah ibu dibawah ini!</p>
+
+    <div class="gift-container">
+        <div class="gift-box">
+            <h3>Hadiah 1</h3>
+            <button onclick="redirectPage('https://jwpentertainments.eu.org/khusus/teacher-day/aw/index2')">Buka</button>
+        </div>
+        
+        <div class="gift-box">
+            <h3>Hadiah 2</h3>
+            <button onclick="redirectPage('https://jwpentertainments.eu.org/khusus/teacher-day/aw/index3')">Buka</button>
+        </div>
+    </div>
 
     <script>
         function redirectPage(link) {
             window.location.href = link;
         }
     </script>
-
 </body>
 </html>
