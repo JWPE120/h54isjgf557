@@ -1,0 +1,12 @@
+ /secure/page
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Robots-Tag: index
+
+/static/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: index
+
+https://jwpentertainments.eu.org/*
+  X-Robots-Tag: index
