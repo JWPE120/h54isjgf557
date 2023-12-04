@@ -1,0 +1,9 @@
+ # Redirect non-www to www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^jwpentertainments\.eu\.org [NC]
+RewriteRule ^(.*)$ http://www.jwpentertainments.eu.org/$1 [L,R=301]
+
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.jwpentertainments\.eu\.org [NC]
+RewriteRule ^(.*)$ http://jwpentertainments.eu.org/$1 [L,R=301]
