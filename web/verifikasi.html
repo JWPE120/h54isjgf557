@@ -1,13 +1,14 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <link rel="icon" href="https://drive.google.com/uc?export=view&id=1Fq4cbrU_Q55sTozSRl0q5xhEukSQwWrE" type="image/x-icon">
+    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1Fq4cbrU_Q55sTozSRl0q5xhEukSQwWrE" type="image/x-icon">
     <title>Pemeriksaan perangkat</title>
     <style>
         body {
             background-color: #f0f0f0;
             text-align: center;
             font-family: Arial, sans-serif;
+            padding: 10px;
         }
 
         .loader {
@@ -15,12 +16,25 @@
             flex-direction: column;
             align-items: center;
             height: 100vh;
+            margin-top: 50px; /* Margin untuk meningkatkan tampilan pada perangkat mobile */
         }
 
         .image-container {
             width: 150px;
             height: 150px;
             overflow: hidden;
+            margin-top: 20px; /* Margin untuk meningkatkan tampilan pada perangkat mobile */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 20px; /* Margin untuk meningkatkan tampilan pada perangkat mobile */
         }
     </style>
 </head>
@@ -28,7 +42,7 @@
     <div class="loader">
         <h1>Memeriksa Perangkat</h1>
         <div class="image-container">
-            <img id="changingImage" src="https://drive.google.com/uc?export=view&id=1BgLjFelAI4Xq68DhGz1W5P8-dd2MV7Sr" width="100" height="100">
+            <img id="changingImage" src="https://drive.google.com/uc?export=view&id=1BgLjFelAI4Xq68DhGz1W5P8-dd2MV7Sr" alt="Changing Image">
         </div>
         <p>Harap tunggu beberapa saat. Proses ini tidak akan lama.</p>
     </div>
@@ -60,8 +74,8 @@
 
         // Memanggil fungsi changeImage secara otomatis setiap 2 detik
         setInterval(changeImage, 2000);
-        
-setTimeout(function () {
+
+        setTimeout(function () {
             // Mendeteksi jenis perangkat
             var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
